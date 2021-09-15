@@ -3,8 +3,9 @@ using TextAnalysis
 corpus = Corpus(Any[])
 
 f = open("/Users/koo01a/work/CogIR/code/topic_models/topics-2014_2015-description.topics");
+
 for ln in eachline(f)
-       corpus.
+       corpus.add_files(ln)
 end
 close(f)
 
